@@ -24,4 +24,20 @@ public class Bottom extends Pie{
     Pie rem(Object o) {
         return remFunction.forBottom(o);
     }
+
+    @Override
+    Pie substFish(Fish replacement, Fish object) {
+        return substFishFunction.forBottom(replacement,object);
+    }
+
+    @Override
+    Pie substInteger(Integer replacement, Integer object) {
+        return substIntegerFunction.forBottom(replacement,object);
+    }
+
+    @Override
+    Pie subst(Object replacement, Object object) {
+        return substFunction.forBottom(replacement,object);
+    }
+
 }

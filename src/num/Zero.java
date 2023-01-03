@@ -1,5 +1,11 @@
 package num;
 
-public class Zero extends Num{
+import lombok.ToString;
 
+@ToString
+public class Zero extends Num{
+    @Override
+    public boolean equals(Object obj) {
+        return obj instanceof Zero;
+    }
 }

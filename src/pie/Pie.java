@@ -9,9 +9,15 @@ public abstract class Pie {
 
     RemFish remFishFunction = new RemFish();
 
-    RemInteger remIntegerFunction=new RemInteger();
+    RemInteger remIntegerFunction = new RemInteger();
 
-    Rem remFunction=new Rem();
+    SubstFish substFishFunction = new SubstFish();
+
+    SubstInteger substIntegerFunction = new SubstInteger();
+
+    Subst substFunction=new Subst();
+
+    Rem remFunction = new Rem();
 
     abstract Pie remA();
 
@@ -20,4 +26,10 @@ public abstract class Pie {
     abstract Pie remInteger(Integer i);
 
     abstract Pie rem(Object o);
+
+    abstract Pie substFish(Fish replacement, Fish object);
+
+    abstract Pie substInteger(Integer replacement, Integer object);
+
+    abstract Pie subst(Object replacement, Object object);
 }
